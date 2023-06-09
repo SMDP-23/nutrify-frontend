@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_config/flutter_config.dart';
 
-void main() {
+void main() async {
+  // WidgetsFlutterBinding.ensureInitialized();
+  // await FlutterConfig.loadEnvVariables();
   runApp(const MyApp());
 }
 
@@ -10,8 +13,10 @@ class MyApp extends StatelessWidget {
   // This widget is the root of your application.
   @override
   Widget build(BuildContext context) {
+    // print(FlutterConfig.get('API_URL'));
+    print("hello world");
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Demo App',
       theme: ThemeData(
         // This is the theme of your application.
         //
@@ -25,7 +30,7 @@ class MyApp extends StatelessWidget {
         useMaterial3: true,
         primarySwatch: Colors.blue,
       ),
-      home: const MyHomePage(title: 'Flutter Demo Home Page'),
+      home: const MyHomePage(title: 'Flutter Demo Home Page Q'),
     );
   }
 }
