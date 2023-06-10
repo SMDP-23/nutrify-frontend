@@ -36,10 +36,15 @@ dependencies:
   cupertino_icons: ^1.0.2
   firebase_core: ^2.13.1
   flutter_config: ^2.0.0
+  flutter_native_splash: ^2.2.19
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+
+flutter_native_splash:
+  color: "#f7f6f1"
+  image: assets/images/splash.png
 
   # The "flutter_lints" package below contains a set of recommended lints to
   # encourage good coding practices. The lint set provided by the package is
